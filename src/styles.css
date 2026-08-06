@@ -11,7 +11,7 @@
   --muted: #53697a;
   --border: rgba(0, 92, 169, 0.16);
   --shadow: 0 20px 60px rgba(0, 59, 118, 0.14);
-  --header-height: 78px;
+  --header-height: 96px;
   --shell: 1240px;
   --side-padding: clamp(1rem, 4vw, 3rem);
   font-family:
@@ -218,24 +218,24 @@ section[id] {
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1rem;
   color: var(--navy);
   text-decoration: none;
 }
 
 .brand-logo {
   display: block;
-  width: 4.25rem;
-  height: 3.05rem;
+  width: 6.5rem;
+  height: 5.5rem;
   flex: 0 0 auto;
-  object-fit: cover;
-  object-position: top;
+  object-fit: contain;
+  object-position: center;
 }
 
 .brand-name {
   display: grid;
   font-family: Georgia, Cambria, "Times New Roman", serif;
-  font-size: 0.94rem;
+  font-size: 1.2rem;
   letter-spacing: 0.045em;
   line-height: 1.05;
 }
@@ -967,7 +967,20 @@ section[id] {
 
 @media (max-width: 760px) {
   :root {
-    --header-height: 70px;
+    --header-height: 86px;
+  }
+
+  .brand {
+    gap: 0.75rem;
+  }
+
+  .brand-logo {
+    width: 5.6rem;
+    height: 4.8rem;
+  }
+
+  .brand-name {
+    font-size: 1.05rem;
   }
 
   .menu-toggle {
@@ -1126,12 +1139,12 @@ section[id] {
   }
 
   .brand-logo {
-    width: 3.65rem;
-    height: 2.6rem;
+    width: 5rem;
+    height: 4.5rem;
   }
 
   .brand-name {
-    font-size: 0.83rem;
+    font-size: 0.95rem;
   }
 
   .brand-name span:last-child {
