@@ -1,4 +1,5 @@
-import { EMAIL_ADDRESS, EMAIL_LINK } from '../constants'
+import { EMAIL_ADDRESS, PHONE_NUMBER } from '../constants'
+import { CopyButton } from './CopyButton'
 
 export function ContactSection() {
   return (
@@ -11,12 +12,14 @@ export function ContactSection() {
             Tell us what you have in mind, and let’s begin designing your next
             journey.
           </p>
-          <a className="button button-light" href={EMAIL_LINK}>
-            Contact CB Travel Planner
-          </a>
-          <a className="contact-email" href={`mailto:${EMAIL_ADDRESS}`}>
-            {EMAIL_ADDRESS}
-          </a>
+          <div className="contact-detail contact-email">
+            <span>{EMAIL_ADDRESS}</span>
+            <CopyButton value={EMAIL_ADDRESS} label="email address" />
+          </div>
+          <div className="contact-detail contact-phone">
+            <span>{PHONE_NUMBER}</span>
+            <CopyButton value={PHONE_NUMBER} label="phone number" />
+          </div>
         </div>
       </div>
     </section>

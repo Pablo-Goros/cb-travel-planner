@@ -1,6 +1,5 @@
-import { EMAIL_ADDRESS } from '../constants'
+import { EMAIL_ADDRESS, PHONE_NUMBER } from '../constants'
 import type { OpenLegalDialog } from '../types'
-import { Brand } from './Brand'
 
 interface FooterProps {
   onOpenLegal: OpenLegalDialog
@@ -12,10 +11,14 @@ export function Footer({ onOpenLegal }: FooterProps) {
   return (
     <footer className="site-footer">
       <div className="section-shell footer-main">
-        <Brand />
-        <a className="footer-email" href={`mailto:${EMAIL_ADDRESS}`}>
-          {EMAIL_ADDRESS}
-        </a>
+        <div className="footer-contact">
+          <div className="footer-detail footer-email">
+            <span>{EMAIL_ADDRESS}</span>
+          </div>
+          <div className="footer-detail footer-phone">
+            <span>{PHONE_NUMBER}</span>
+          </div>
+        </div>
         <nav className="footer-legal" aria-label="Legal">
           <a href="#privacy" onClick={(event) => onOpenLegal(event, 'privacy')}>
             Privacy Policy

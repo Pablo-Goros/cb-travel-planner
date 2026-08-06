@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import type { KeyboardEvent, ReactNode } from 'react'
-import { EMAIL_ADDRESS } from '../constants'
+import { EMAIL_ADDRESS, PHONE_NUMBER } from '../constants'
 import type { LegalDialogId } from '../types'
 
 interface LegalDialogProps {
@@ -166,9 +166,11 @@ export function PrivacyDialog({
 
       <h3>Contact</h3>
       <p>CB Travel Planner</p>
-      <p>
-        Email:{' '}
-        <a href={`mailto:${EMAIL_ADDRESS}`}>{EMAIL_ADDRESS}</a>
+      <p className="legal-contact-detail">
+        Email: <span>{EMAIL_ADDRESS}</span>
+      </p>
+      <p className="legal-contact-detail">
+        Phone: <span>{PHONE_NUMBER}</span>
       </p>
     </LegalDialog>
   )
@@ -252,9 +254,11 @@ export function TermsDialog({
 
       <h3>Contact</h3>
       <p>CB Travel Planner</p>
-      <p>
-        Email:{' '}
-        <a href={`mailto:${EMAIL_ADDRESS}`}>{EMAIL_ADDRESS}</a>
+      <p className="legal-contact-detail">
+        Email: <span>{EMAIL_ADDRESS}</span>
+      </p>
+      <p className="legal-contact-detail">
+        Phone: <span>{PHONE_NUMBER}</span>
       </p>
     </LegalDialog>
   )

@@ -121,9 +121,6 @@ export function Header() {
               </a>
             ))}
           </div>
-          <a className="button button-small" href="#contact" onClick={closeMenu}>
-            Plan Your Trip
-          </a>
         </nav>
       </div>
     </header>
