@@ -366,19 +366,14 @@ section[id] {
 .text-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
   color: var(--navy);
   font-size: 0.9rem;
   font-weight: 700;
   text-underline-offset: 0.3em;
-}
-
-.text-link span {
-  color: var(--gold);
   transition: transform 160ms ease;
 }
 
-.text-link:hover span {
+.text-link:hover {
   transform: translateY(2px);
 }
 
@@ -518,7 +513,7 @@ section[id] {
 }
 
 .service-card:hover {
-  border-color: rgba(162, 123, 69, 0.48);
+  border-color: var(--gold);
   box-shadow: 0 14px 38px rgba(17, 43, 57, 0.07);
   transform: translateY(-3px);
 }
@@ -528,8 +523,8 @@ section[id] {
   width: 3rem;
   height: 3rem;
   place-items: center;
-  border: 1px solid rgba(162, 123, 69, 0.44);
   border-radius: 50%;
+  background: var(--sand);
   color: var(--gold);
 }
 

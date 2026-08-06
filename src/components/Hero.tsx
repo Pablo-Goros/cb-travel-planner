@@ -39,7 +39,6 @@ export function Hero() {
           </a>
           <a className="text-link" href="#services">
             Explore Our Services
-            <span aria-hidden="true">↓</span>
           </a>
         </div>
         <p className="trust-note">
