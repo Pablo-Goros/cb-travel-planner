@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">CB Travel Planner</title>
+  <circle cx="32" cy="32" r="29" fill="#f7f3eb" stroke="#805b2d" stroke-width="2"/>
+  <text x="32" y="39" fill="#102d3f" font-family="Georgia, Cambria, 'Times New Roman', serif" font-size="22" letter-spacing="1" text-anchor="middle">CB</text>
+</svg>
