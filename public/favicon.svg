@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
   <title id="title">CB Travel Planner</title>
-  <image href="/images/cb-travel-planner-logo.png" x="0" y="0" width="64" height="64" preserveAspectRatio="xMidYMid meet"/>
+  <rect width="64" height="64" rx="14" fill="#082f49"/>
+  <circle cx="32" cy="32" r="25" fill="#fff"/>
+  <image href="/images/cb-travel-planner-logo.png" x="4" y="4" width="56" height="56" preserveAspectRatio="xMidYMid meet"/>
 </svg>
