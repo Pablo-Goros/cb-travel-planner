@@ -10,7 +10,7 @@ export function About() {
       <div className="section-shell about-grid">
         <div className="about-heading" data-reveal>
           <p className="eyebrow">Our approach</p>
-          <h2 id="about-title">Travel should feel exciting—not overwhelming.</h2>
+          <h2 id="about-title">Travel should feel exciting, not overwhelming.</h2>
         </div>
 
         <div className="about-copy" data-reveal>

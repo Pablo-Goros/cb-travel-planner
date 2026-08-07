@@ -35,7 +35,7 @@ export function Hero() {
         </p>
         <div className="hero-actions">
           <a className="button" href="#contact">
-            Start Planning Your Trip
+            Tell Us About Your Trip
           </a>
           <a className="text-link" href="#services">
             Explore Our Services

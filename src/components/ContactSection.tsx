@@ -1,5 +1,5 @@
 import { EMAIL_ADDRESS, PHONE_NUMBER } from '../constants'
-import { CopyButton } from './CopyButton'
+import { CopyContactDetail } from './CopyContactDetail'
 
 export function ContactSection() {
   return (
@@ -12,13 +12,17 @@ export function ContactSection() {
             Tell us what you have in mind, and let’s begin designing your next
             journey.
           </p>
-          <div className="contact-detail contact-email">
-            <span>{EMAIL_ADDRESS}</span>
-            <CopyButton value={EMAIL_ADDRESS} label="email address" />
-          </div>
-          <div className="contact-detail contact-phone">
-            <span>{PHONE_NUMBER}</span>
-            <CopyButton value={PHONE_NUMBER} label="phone number" />
+          <div className="contact-details">
+            <CopyContactDetail
+              value={EMAIL_ADDRESS}
+              label="email address"
+              heading="Email Cecilia"
+            />
+            <CopyContactDetail
+              value={PHONE_NUMBER}
+              label="phone number"
+              heading="Phone"
+            />
           </div>
         </div>
       </div>
