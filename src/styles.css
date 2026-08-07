@@ -1,6 +1,6 @@
 :root {
   --navy: #005ca9;
-  --navy-dark: #003b76;
+  --navy-dark: #003d78;
   --ivory: #f3f8fc;
   --warm-white: #ffffff;
   --sand: #dcebf7;
@@ -32,7 +32,7 @@
 html {
   min-width: 320px;
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--header-height) + 1rem);
+  scroll-padding-top: var(--header-height);
 }
 
 body {
@@ -90,7 +90,7 @@ p {
 }
 
 section[id] {
-  scroll-margin-top: calc(var(--header-height) + 1rem);
+  scroll-margin-top: -5px;
 }
 
 :focus-visible {
